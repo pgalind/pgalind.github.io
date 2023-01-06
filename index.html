@@ -8,7 +8,6 @@
 	<title>Portfolio - Pablo Galindo</title>
 	<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
-	<link rel="stylesheet" href="">
 	<script src="bower_components/foundation-sites/dist/js/foundation.min.js" charset="utf-8"></script>
 	<script src="bower_components/normalize-css/normalize.css" charset="utf-8"></script>
 	<script src="bower_components/typed.js/dist/typed.min.js" charset="utf-8"></script>
@@ -32,130 +31,132 @@
 					<div class="profile-photo" style="background-image: url(assets/images/ClemsonProfileLarge.JPG);">
 					</div>
 					<div class="details">
-						<h2>Hi, I'm Pablo.<br> <span id="writing-text"><span></h2>
+						<h2>Hi, I'm Pablo.<br><span id="writing-text"><span></h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="small-12 column">
 					<div class="cta text-center">
-						<a class="my-button cta-button expand form-button" href="mailto:pgalind@g.clemson.edu" target="_blank">Get In Touch</a>
-					</div>
-				</div>
-				<div class="small-12 column">
-					<div class="my-arrow-div text-center">
-						<a href="https://github.com/pgalind" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a>
-						<a href="https://www.linkedin.com/in/pgalind/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                        <a href="https://instagram.com/pabloartvisuals" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+						<a href="mailto:pgalind@g.clemson.edu" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a>
+						<a href="https://www.linkedin.com/in/pgalind/" target="_blank"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
+						<a href="https://github.com/pgalind" target="_blank"><i class="fa fa-github-alt" style="font-size:36px"></i></a>
 					</div>
 				</div>
 			</div>
-
 		</section>
 
-
-		<section id="experience">
-
-			<div class="row column">
+		<section id="skills">
+			<div class="row">
 				<div class="small-12">
 					<h2 class="text-center">My Skills</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="small-12 medium-4 columns text-center experience-topics">
+				<div class="small-12 medium-4 columns text-center skills-topics">
 					<i class="fi-laptop"></i>
 					<h3>Front-end</h3>
 					<ul>
 						<li>HTML5</li>
 						<li>CSS</li>
-                        <li>Tailwind</li>
-						<li>Javascript</li>
-                        <li>PHP</li>
-
+                        <li>Tailwind CSS</li>
+						<li>JavaScript</li>
+                        <li>React</li>
+						<li>Next.js</li>
 					</ul>
 				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
+				<div class="small-12 medium-4 columns text-center skills-topics">
 					<i class="fi-database"></i>
 					<h3>Back-end</h3>
 					<ul>
 						<li>C/C++</li>
 						<li>Java</li>
-                        <li>Node.js</li>
-                        <li>PHP</li>
+						<li>PHP</li>
                         <li>MySQL</li>
+						<li>Python</li>
 					</ul>
 				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
+				<div class="small-12 medium-4 columns text-center skills-topics">
 					<i class="fi-star"></i>
 					<h3>Tools</h3>
 					<ul>
 						<li>VS Code</li>
-                        <li>IntelliJ IDEA</li>
-						<li>WSL</li>
-						<li>Git</li>
+						<li>Github</li>
+                        <li>Bash</li>
+						<li>Azure</li>
 						<li>AWS</li>
 					</ul>
 				</div>
 			</div>
-
 		</section>
 
 		<section id="project">
 			<h2 class="text-center">Projects</h2>
-
-			<div class="row project-row">
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/UberClone.JPG" alt="UberClone Image">
+			<div class="row">
+				<div class="small-12 medium-6 columns">
+					<img src="assets/images/UberClone.JPG" alt="UberClone Image" width="420px">
 				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
+				<div class="small-12 medium-6 columns">
+					<div class="details">
 						<h3>Uber App Clone</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Developed a simple version of the Uber app using JavaScript, React, NextJS, Tailwind styled components, and Firebase for Google authentication.</p>
-                        <p>This implementation has a login and Google authentication system. It displays a map from Mapbox API, and places markers on the pickup and dropoff locations that the user enters. It also estimates the fares using realistic rates from Uber and calculating distance between pickup and dropoff locations from Mapbox API.</p>
-						<a class="my-button" target="_blank" href="https://github.com/pgalind/uber-app-clone-nextjs">Visit Website</a>
+						<p>Developed a serverless clone of the Uber app using JavaScript, React, Next.js, Tailwind styled components, and Firebase for Google authentication.</p>
+                        <p>This application supports real Google authentication as real-time geolocation. the saletite map is generated by Mapbox API, which is also used to calculate trip distance from the pickup and dropoff locations entered by the user. This distance is used to estimate the fare using accurate rates for the different types of rides.</p><br>
+						<a class="my-link" target="_blank" href="https://github.com/pgalind/uber-app-clone-nextjs">View on Github</a>
+						<a class="my-button" target="_blank" href="https://uber-clone-next-puce.vercel.app/">Deploy!</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="row project-row">
+			<div class="row">
 				<div class="small-12 medium-6 columns">
-					<img src="assets/images/MeTube.JPG" alt="MeTube Image"> </div>
-				<div class="small-12 medium-5 medium-offset-1 columns">
-					<div class="details details-ftm">
+					<div class="details">
 						<h3>MeTube</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Team-based project for the Database Management Systems course, MeTube is an online multimedia sharing platform implemented with PHP, HTML, CSS, and MySQL databases.</p>
-                        <p>This application allows users to upload and download multimedia files, set visibility, allow discussion, allow rating, organize files into playlists, and exchange messages with other users.</p>
-						<!-- <a class="my-button" target="_blank" href="http://google.com">Visit Website</a>*/} -->
+						<p>Team-based project for the Database Management Systems course. MeTube is an online multimedia sharing platform implemented with PHP, HTML, CSS, and mySQL.</p>
+                        <p>MeTube allows users to upload and download multimedia files, set post visibility, create discussions, rate posts, organize files into playlists, and exchange messages with other users.</p><br>
+						<a class="my-link" target="_blank" href="https://github.com/pgalind/metube-php-mysql-css">View on Github</a>
+					</div>
+				</div>
+				<div class="small-12 medium-6 columns">
+					<div class="details">
+						<h3>LotWizard (Capstone)</h3>
+						<p class="platform">Web</p>
+						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
+						<p>Capstone project. Team-based, following the Agile methodology. Written in JavaScript using React, Next.js, Node, Tailwind CSS, serverless mySQL, and connected to eBay API.</p>
+                        <p>LotWizard is a platform where trucking companies can sponsor and reward drivers for good performance. It uses an eBay API to support a sponsor's catalog in which drivers can use in-app currency, or points, to make purchases. LotWizard supports 3 different types of users - drivers, sponsors, and admins - each with different levels of access/control.</p><br>
+						<a class="my-link" target="_blank" href="https://github.com/pgalind/LotWizard-capstone-project">View on Github</a>
 					</div>
 				</div>
 			</div>
-
 		</section>
 
 		<section id="experience">
 			<h2 class="text-center">Experience</h2>
-			<div class="row">
-				<div class="small-12 medium-8 medium-offset-2">
-					<p class="text-center tag-line">In the Fall '21 semester, I was the lead undergraduate teaching assistant (UTA) for a lab section of Intro to Computer Organization at Clemson university.</p>
-                    <p class="text-center tag-line">I Prepared and delivered course material both virtually and in-person, managed correspondence across virtual platforms, updated the course website, kept track of student attendance and graded assignments.</p>
-                    <p class="text-center tag-line">I improved communication and leadership skills, time management, and ability to adapt and work with others.</p>
+			<div class="small-12 medium-6 columns"></div>
+				<div class="details">
+					<h3>Support Associate</h3>
+					<p class="location">Clear Touch Interactive ~ 4 months</p>
+					<p>Provided remote and on-site technical support consisting of inspection, disassembly, maintenance, and replacement of Clear Touch interactive panels. Performed PC imaging, license activations, and hardware upgrades on an average of 200 PCs per day. Input outbound-ready panel information into Excel sheets. Palletized, strapped, and labeled outbound panels.</p><br>
+				
+					<h3>Lead Undergraduate Teaching Assistant (UTA)</h3>
+					<p class="location">Clemson University ~ 4 months</p>
+					<p>Oversaw a lab section with 30+ students. Prepared and delivered course material both virtually and in-person. Provided one-to-one assistance during office hours. Recorded attendance and grades in online reporting systems.</p>
 				</div>
 			</div>
 		</section>
 
 		<section id="footer-cta">
-			<h2 class="text-center">Help me help YOU!</h2>
+			<h2 class="text-center">Connect with me!</h2>
 			<p></p>
 			<div class="row text-center">
 				<div class="small-12 medium-8 medium-offset-2 columns">
-					<p class="text-center">I'm currently looking for a Summer internship, preferably around Greenville or Clemson, South Carolina, where I can expand my technical and professional skills.</p>
+					<p class="text-center">I am a fresh college graduate with a B.S. in Computer Science and a minor in Cybersecurity. I am a self-motivated, hardworking, and enthusiastic developer looking for a Entry-level position where I can grow alongside a team of like-minded individuals, and expand my technical and professional skills.</p>
 				</div>
 				<div class="small-12 columns" id="startButtonDiv">
-					<a class="my-button form-button" href="mailto:pgalind@g.clemson.edu" target="_blank">E-mail Me</a>
+					<a class="form-button" href="mailto:pgalind@g.clemson.edu" target="_blank">E-mail Me</a>
 				</div>
 			</div>
 		</section>
@@ -164,7 +165,7 @@
 			<div class="row text-center">
 				<div class="small-12 medium-6 medium-offset-3 columns">
 					<p id="logo">PG</p>
-					<p id="copyright">Copyright &copy; 2021 | Pablo Galindo</p>
+					<p id="copyright">Copyright &copy; 2023 | Pablo Galindo</p>
 				</div>
 			</div>
 		</footer>
